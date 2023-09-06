@@ -1,0 +1,56 @@
+Fork and Clone the Starter Repo:
+
+Go to the provided starter repo on GitHub.
+
+Click on the "Fork" button in the top right corner to create a copy of the repository under your GitHub account.
+
+Clone the forked repository to your local machine using Git. Open your terminal and run:
+
+bash
+Copy code
+git clone https://github.com/your-username/starter-repo.git
+Install IntelliJ IDEA:
+
+If you haven't already, download and install IntelliJ IDEA, which is one of the best Java IDEs.
+Open the Project in IntelliJ:
+
+Open IntelliJ IDEA.
+Click on "Open" and select the directory where you cloned the forked repository.
+Explore the Codebase:
+
+Take some time to explore the codebase to understand the existing structure and flow of the program.
+Create Entity Classes:
+
+In the provided Spring application, create a class for each entity in your data model (e.g., FinancialAdvisor, Client, Portfolio, Security). These classes should be placed in the "entities" directory.
+Annotate Entities:
+
+Annotate each entity class with the @Entity annotation from the javax.persistence package.
+Use the @GeneratedValue annotation to specify that the ID should be auto-generated.
+Use appropriate JPA annotations to define relationships between entities (e.g., @OneToMany, @ManyToOne, etc.) based on your data model.
+Initialize Instance Variables:
+
+Each class should contain a constructor that initializes all instance variables.
+Create constructors with appropriate parameters to set entity attributes during object creation.
+Getter and Setter Methods:
+
+Expose getter and setter methods for each instance variable (except the ID field for which a setter is not required).
+Review Existing Entities:
+
+Review the existing entity provided in the codebase for reference on how to annotate and structure your entity classes.
+Commit and Push Changes:
+
+After implementing your data model, commit your changes to your local Git repository:
+
+bash
+Copy code
+git add .
+git commit -m "Implemented data model entities"
+Push the changes to your forked repository on GitHub:
+
+bash
+Copy code
+git push origin master
+Submit the Link:
+
+Provide a link to your project repository to complete the task.
+Remember to test your code and make sure that the entity classes are correctly annotated and structured according to the provided requirements and guidelines. Good luck with your implementation!
